@@ -371,7 +371,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/arrow_down_to_project.png');
+    background-image: url('images/arrow_down_to_project.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px;
