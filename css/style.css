@@ -1,0 +1,758 @@
+/* typography settings */
+h1,
+h2,
+h3 {
+    font-family: var(--font-montagu-slab);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #FBF6F1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 整体滚动条样式 */
+
+
+/* navigationbar settings */
+.navbar-holder {
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: auto;
+}
+
+.navbar {
+    z-index: 2;
+    width: auto;
+    height: 55px;
+    max-width: 100%;
+    min-width: 65vw;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(211, 211, 211, .34);
+    border: 2px solid rgba(162, 162, 162, 0.17);
+    border-radius: 999px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 20px;
+    display: flex;
+    position: sticky;
+    font-family: var(--font-montserrat);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.SP {
+    font-family: montserrat, sans-serif;
+    font-size: small;
+}
+
+nav {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+nav .nav-link {
+    color: #222;
+    font-family: montserrat, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 100%;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: small;
+    transition: all 0.2s ease;
+}
+
+nav .nav-link:hover {
+    /* font-weight: 900; */
+    color: #F6BD60;
+    text-shadow: 0px 4px 8px rgba(152, 152, 152, 0.2);
+}
+
+
+/* footer overall layout */
+footer {
+
+    z-index: 9999;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 324px;
+    background-color: #181818;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -24px 0 0;
+    display: flex;
+    position: relative;
+    margin-top: 35px;
+}
+
+.foot-container-1 {
+    width: 80%;
+    max-width: 1200px;
+    height: 80%;
+    justify-content: space-between;
+    margin-top: 50px;
+    display: flex;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: 40px;
+    color: #d9d9d9;
+    font-family: var(--font-montagu-slab);
+}
+
+.foot-container-2 {
+    width: 80%;
+    max-width: 1200px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 2px;
+    margin-bottom: 34px;
+    display: flex;
+    color: #d9d9d9;
+}
+
+.footerup-right,
+.footerup-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footerup-left {
+    font-family: montagu slab, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.footer-email {
+    font-size: medium;
+    font-weight: 200;
+    font-family: montserrat;
+}
+
+.footerup-right {
+    align-self: stretch;
+    flex: 1;
+    gap: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 21px;
+}
+
+.address {
+    position: relative;
+    font-weight: 300;
+    z-index: 1;
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+}
+
+.address-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 25px;
+}
+
+.footer-email {
+    padding-left: 10px;
+}
+
+
+/* The contact logo settings */
+.logo-group {
+    flex-direction: row;
+    justify-content: flex-end;
+    /* margin-top: 21px; */
+    display: flex;
+}
+
+.instagramlink {
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    background-image: url('../images/streamline_instagram.png');
+    background-position: 50%;
+    background-size: cover;
+    margin-left: 25px;
+}
+
+.linkedinlink {
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    background-image: url('../images/mdi_linkedin.png');
+    background-position: 50%;
+    background-size: cover;
+    margin-left: 25px;
+}
+
+.behancelink {
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    background-image: url('../images/akar-icons_behance-fill.png');
+    background-position: 50%;
+    background-size: cover;
+    margin-left: 25px;
+}
+
+.aline {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.copyright {
+    position: relative;
+    font-weight: 300;
+    display: inline-block;
+    max-width: 100%;
+    z-index: 1;
+    color: #fff;
+    margin-top: 11px;
+    font-family: montserrat, sans-serif;
+    font-size: 15px;
+}
+
+
+/* 简介 page setting */
+/* the wholepage setting */
+.intro {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.intro .title {
+    width: 85%;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.colorful-text {
+    color: #F6BD60;
+}
+
+.about-page {
+    flex: 1;
+    padding-left: 100px;
+    /* padding-left: 100px; */
+}
+
+.bigname-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.bigname {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 0 10px 0;
+}
+
+.smallname {
+    font-family: montserrat, sans-serif;
+    font-size: xx-large;
+}
+
+.overall-container-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 60px 0;
+}
+
+.overall-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80hv;
+    align-items: center;
+}
+
+
+.info-image,
+.info-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+
+.info-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.info-image img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+    aspect-ratio: 918 / 409;
+}
+
+.info-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.info-text ul {
+    list-style-type: disc;
+    padding-top: 30px;
+}
+
+.skillset {
+    padding-right: 30px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 100px;
+    font-family: montagu slab, sans-serif;
+
+}
+
+.title,
+p {
+    margin: 10px;
+}
+
+.info-text span {
+    padding: 20px 0 0 0;
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+/* 这里是主要的项目页面 */
+.go-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/arrow_down_to_project.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+    padding: 20px;
+    cursor: pointer;
+    /* border: solid 1px black;
+    border-radius: 5px; */
+    text-decoration: none;
+    background-size: contain;
+    transition: transform 0.2s ease;
+}
+
+.go-project:hover {
+    transform: scale(1.2);
+    transform: translateY(5px);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+
+}
+
+#project-area {
+    scroll-margin-top: 90px;
+}
+
+.grid-item-wrapper {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    margin: 100px 0 50px 0;
+}
+
+.grid-container {
+    width: 80%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-image {
+    flex: 3;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.project-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 95%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgba(182, 182, 182, 0.05);
+    color: #ffffffdd;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-black {
+    color: #222;
+}
+
+/* hover效果 */
+.project-image:hover img {
+    filter: blur(6px);
+    /* 图片hover时添加模糊效果 */
+}
+
+.project-image:hover .image-overlay {
+    opacity: 1;
+}
+
+
+
+.project-title,
+.project-tags {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-family: Montagu Slab, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.tag {
+    font-family: montserrat, sans-serif;
+    font-size: x-small;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 25px;
+    border: solid 1px #272727;
+    margin-right: 2px;
+}
+
+.read-more {
+    display: block;
+    background-image: url('/images/arrow_right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 30px; */
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    /* margin: 0px 20px; */
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    background-size: contain;
+}
+
+/* 现在开始visual page */
+.visual-gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    /* padding: 45px 0; */
+    margin-bottom: 60px;
+}
+
+.visual-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+}
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery-item {
+    background-color: transparent;
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+    grid-template-rows: auto auto;
+}
+
+.photography-large {
+    grid-column: span 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+
+/* There is the 具体项目 setting */
+
+.overall-content {
+    display: flex;
+    flex-direction: row;
+    /* max-width: var(--page-width); */
+    margin: 0 auto;
+    padding: 30px 16px;
+    position: relative;
+    z-index: 2;
+    background: #FBF6F1;
+
+}
+
+.image-container {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.image-container img {
+    border-radius: 15px;
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* 
+hr {
+    width: 95%;
+    opacity: 0.7;
+} */
+
+aside {
+    display: block;
+    flex: 0 0 14rem;
+}
+
+.nav {
+    position: sticky;
+    top: 5rem;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-right: 32px;
+    border-right: 2px solid grey;
+    text-align: right;
+    line-height: 1.5;
+}
+
+.nav-list {
+    margin: 0 5px 0 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+}
+
+.aside-nav-link {
+    display: inline-block;
+    padding: 6px 16px;
+    line-height: 1.25em;
+    color: grey;
+    font-weight: var(--bold);
+    border-radius: var(--border-radius);
+    font-family: montserrat, sans-serif;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.aside-nav-link:hover {
+    color: #FF8D8D;
+    font-weight: 700;
+}
+
+#Ideation,
+#MaterialExperiment,
+#Brief,
+#ProblemGoal,
+#Research,
+#Wireframe,
+#UserTesting,
+#finaloutcome,
+#Takeaways {
+    scroll-margin-top: 90px;
+}
+
+.project-content-wrapper {
+    font-family: montserrat;
+    line-height: 1.5;
+}
+
+.project-content-wrapper p {
+    font-size: small;
+}
+
+.project-content-wrapper ul {
+    list-style-type: disc;
+}
+
+.project-title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.3;
+    /* padding-top: 30px; */
+}
+
+.project-subtitle {
+    font-size: 40px;
+    padding: 12px 0;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.columnlayout32 {
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+}
+
+.columnlayout {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    object-fit: cover;
+}
+
+.columnlayout32>div:nth-child(1) {
+    flex-grow: 3;
+    flex-basis: 0;
+}
+
+.columnlayout32>div:nth-child(2) {
+    flex-grow: 2;
+    flex-basis: 0;
+    padding-left: 60px;
+    align-self: baseline;
+}
+
+.columnlayout>div:nth-child(1) {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.columnlayout>div:nth-child(2) {
+    flex-grow: 1;
+    flex-basis: 0;
+    /* padding-left: 60px; */
+    align-self: baseline;
+
+}
+
+.iframe-container {
+    /* overflow-x: hidden; */
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    mix-blend-mode: darken;
+}
+
+.project-image-inside img {
+    width: 95%;
+    /* border: rgba(128, 128, 128, 0.374) solid 2px;
+    border-radius: 20px; */
+    /* border: solid 1px #FF8D8D; */
+    /* border-radius: 10px; */
+}
+
+
+/* animation */
+/* 隐藏元素，直到它们被滚动到视口中 */
+.scroll-trigger {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+/* 当元素进入视口时，通过 JavaScript 添加这个类 */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
