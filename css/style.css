@@ -18,9 +18,6 @@ body {
 }
 
 
-/* 整体滚动条样式 */
-
-
 /* navigationbar settings */
 .navbar-holder {
     z-index: 999;
@@ -57,8 +54,11 @@ body {
 }
 
 .SP {
+    color: #F6BD60;
+    text-decoration: none;
     font-family: montserrat, sans-serif;
     font-size: small;
+    font-weight: 700;
 }
 
 nav {
@@ -76,12 +76,13 @@ nav .nav-link {
     display: inline-block;
     margin-right: 15px;
     font-size: small;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 nav .nav-link:hover {
     /* font-weight: 900; */
     color: #F6BD60;
+    transform: translateY(-4px);
     text-shadow: 0px 4px 8px rgba(152, 152, 152, 0.2);
 }
 
@@ -100,7 +101,7 @@ footer {
     margin: -24px 0 0;
     display: flex;
     position: relative;
-    margin-top: 35px;
+    /* margin-top: 35px; */
 }
 
 .foot-container-1 {
@@ -187,6 +188,10 @@ footer {
     justify-content: flex-end;
     /* margin-top: 21px; */
     display: flex;
+}
+
+.logo-group:hover {
+    cursor: pointer;
 }
 
 .instagramlink {
@@ -366,7 +371,7 @@ p {
     line-height: 1.3;
 }
 
-/* 这里是主要的项目页面 */
+/* 这里是index的项目页面 */
 .go-project {
     display: flex;
     justify-content: center;
@@ -445,6 +450,9 @@ p {
     transition: filter 0.3s ease;
 }
 
+.project-info-text .project-title {
+    margin-bottom: 0%;
+}
 
 .project-image {
     position: relative;
@@ -506,7 +514,7 @@ p {
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    padding: 5px 25px;
+    padding: 5px 20px;
     border: solid 1px #272727;
     margin-right: 2px;
 }
@@ -525,6 +533,13 @@ p {
     cursor: pointer;
     text-decoration: none;
     background-size: contain;
+    transition: transform 0.4s ease;
+}
+
+.read-more:hover {
+    transform: scale(1.2);
+    transform: translateX(5px);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 /* 现在开始visual page */
@@ -645,7 +660,8 @@ aside {
 }
 
 .aside-nav-link:hover {
-    color: #FF8D8D;
+    text-decoration: underline;
+    color: #F6BD60;
     font-weight: 700;
 }
 
