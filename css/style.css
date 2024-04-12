@@ -54,7 +54,7 @@ body {
 }
 
 .SP {
-    color: #F6BD60;
+    color: #FF9900;
     text-decoration: none;
     font-family: montserrat, sans-serif;
     font-size: small;
@@ -257,13 +257,15 @@ footer {
 }
 
 .intro .title {
+    color: #181818;
     width: 85%;
     font-weight: 400;
     font-size: 70px;
 }
 
 .colorful-text {
-    color: #F6BD60;
+    color: #FF9900;
+    font-weight: 600;
 }
 
 .about-page {
@@ -542,12 +544,15 @@ p {
     transform: scale(1.2);
     transform: translateX(5px);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+
 }
+
+
 
 /* 现在开始visual page */
 .visual-gallery-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* padding: 45px 0; */
     margin-bottom: 60px;
 }
@@ -664,17 +669,14 @@ aside {
 .aside-nav-link:hover,
 .aside-nav-link:active {
     /* text-decoration: underline; */
-    color: #F6BD60;
+    color: #FF9900;
     font-weight: 700;
     font-size: large;
 }
 
 .aside-nav-link.active-link {
-    color: #F6BD60;
-    /* 指定激活链接的颜色 */
+    color: #FF9900;
     font-weight: 700;
-    /* 使激活链接更加醒目 */
-    /* 可以添加更多样式来区分激活状态，如背景色等 */
 }
 
 
