@@ -145,6 +145,10 @@ footer {
     font-weight: 500;
 }
 
+.footerup-left p:first-child {
+    margin-top: 0px;
+}
+
 .footer-email {
     font-size: medium;
     font-weight: 200;
