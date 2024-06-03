@@ -86,7 +86,6 @@ nav .nav-link:hover {
     text-shadow: 0px 4px 8px rgba(152, 152, 152, 0.2);
 }
 
-
 /* footer overall layout */
 footer {
     display: flex;
@@ -442,7 +441,7 @@ p {
     box-shadow: #F6BD60;
     transform: scale(1.2);
     transform: translateY(-5px);
-    filter: drop-shadow(0 4px 6px #00000068);
+    filter: drop-shadow(0 4px 8px #F6BD60);
 }
 
 .project-image {
@@ -484,7 +483,7 @@ p {
     max-width: 95%;
     height: 100%;
     padding: 30px;
-    background-color: rgba(182, 182, 182, 0.05);
+    background-color: rgba(235, 235, 235, 0.193);
     color: #ffffffdd;
     font-family: montserrat, sans-serif;
     font-weight: 500;
@@ -793,10 +792,10 @@ aside {
 }
 
 /* some specific page setting */
-#ProblemGoal,
+/* #ProblemGoal,
 #Takeaways {
     margin-right: 90px;
-}
+} */
 
 /* animation */
 /* 隐藏元素，直到它们被滚动到视口中 */
@@ -831,6 +830,20 @@ aside {
 
 /* 写mediaquery了 */
 /* 基本的移动设备响应式调整 */
+@media screen and (min-width: 1800px) {
+    body {
+        align-items: center;
+    }
+
+    .image-container {
+        width: 70%;
+    }
+
+    .overall-content {
+        max-width: 70%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .intro .title {
         font-size: 45px;
