@@ -830,7 +830,7 @@ aside {
 
 /* 写mediaquery了 */
 /* 基本的移动设备响应式调整 */
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
     body {
         align-items: center;
     }
