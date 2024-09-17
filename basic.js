@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 }); // 至少有 10% 的元素在视口中时触发
+    }, { threshold: 0.08 }); // 至少有 10% 的元素在视口中时触发
 
     // 为所有希望滚动触发的元素添加观察器
     document.querySelectorAll('.scroll-trigger').forEach(item => {
