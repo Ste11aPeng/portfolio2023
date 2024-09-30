@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.08 }); // 至少有 10% 的元素在视口中时触发
+    }, { threshold: 0.2 }); // 至少有 10% 的元素在视口中时触发
 
     // 为所有希望滚动触发的元素添加观察器
     document.querySelectorAll('.scroll-trigger').forEach(item => {
@@ -61,3 +61,31 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', activateLink);
     activateLink(); // 初始调用以设置初始活动链接
 });
+
+
+// 获取所有的 div
+const divs = document.querySelectorAll('.columnlayout3 > div');
+
+// 设置淡入函数，给每个div添加淡入效果
+function fadeInElements() {
+    divs.forEach((div, index) => {
+        setTimeout(() => {
+            div.style.opacity = 1;  // 设置为可见
+        }, index * 300);  // 每个div之间有0.5秒的延迟
+    });
+}
+
+// 使用 IntersectionObserver 监控元素是否进入视口
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            fadeInElements();  // 当元素进入视口时触发淡入效果
+            observer.disconnect();  // 触发后取消监听，防止重复触发
+        }
+    });
+});
+
+// 开始观察 .columnlayout3 容器
+const target = document.querySelector('.columnlayout3');
+observer.observe(target);
+
