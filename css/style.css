@@ -9,6 +9,19 @@ html {
     scroll-behavior: smooth;
 }
 
+p,
+li {
+    font-size: 18px;
+}
+
+ul {
+    margin: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -362,7 +375,7 @@ footer {
     font-weight: 400;
     font-size: 100px;
     font-family: montagu slab, sans-serif;
-
+    text-align: center;
 }
 
 .title,
@@ -442,6 +455,7 @@ p {
     transform: scale(1.2);
     transform: translateY(-5px);
     filter: drop-shadow(0 4px 8px #F6BD60);
+
 }
 
 .project-image {
@@ -653,7 +667,7 @@ aside {
     flex-direction: column;
     margin-top: 3rem;
     margin-right: 32px;
-    border-right: 2px solid grey;
+    /* border-right: 2px solid grey; */
     text-align: right;
     line-height: 1.5;
 }
@@ -674,7 +688,7 @@ aside {
     border-radius: var(--border-radius);
     font-family: montserrat, sans-serif;
     text-decoration: none;
-    font-size: medium;
+    font-size: small;
     transition: font-size 0.2s ease;
 }
 
@@ -683,12 +697,12 @@ aside {
     /* text-decoration: underline; */
     color: #FF9900;
     font-weight: 700;
-    font-size: large;
+    font-size: medium;
 }
 
 .aside-nav-link.active-link {
     color: #FF9900;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -771,6 +785,17 @@ aside {
     /* 初始状态：透明 */
     transition: opacity 2s ease;
     /* 添加过渡效果 */
+}
+
+/* 初始状态：元素不可见 */
+.columnlayout3>div {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+/* 当添加 visible 类时，元素淡入显示 */
+.columnlayout3>div.visible {
+    opacity: 1;
 }
 
 .columnlayout3>div:last-child {
