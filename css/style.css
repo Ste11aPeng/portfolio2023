@@ -30,6 +30,15 @@ body {
     flex-direction: column;
 }
 
+:root {
+    --font-SP-Pro-Sans: 'SP Pro Sans', sans-serif;
+    --font-montagu-slab: 'Montagu Slab', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+.sp-pro-sans-page {
+    font-family: var(--font-SP-Pro-Sans);
+}
 
 /* navigationbar settings */
 .navbar-holder {
@@ -1097,4 +1106,81 @@ aside {
     .project-info-text {
         padding: 10px;
     }
+}
+
+
+@font-face {
+    font-family: 'SP Pro Sans';
+    src: url('fonts/SPProSans/SPProSans-Regular.woff2') format('woff2'),
+        url('fonts/SPProSans/SPProSans-Regular.woff') format('woff'),
+        url('fonts/SPProSans/SPProSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* 因为重新设置我的apple的项目而改变的字体变量 */
+:root {
+    --font-SP-Pro-Sans: 'SP Pro Sans', sans-serif;
+    --font-montagu-slab: 'Montagu Slab', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+/* 引入 SP Pro Sans 字体 */
+@font-face {
+    font-family: 'SP Pro Sans';
+    src: url('fonts/SPProSans/SPProSans-Regular.woff2') format('woff2'),
+        url('fonts/SPProSans/SPProSans-Regular.woff') format('woff'),
+        url('fonts/SPProSans/SPProSans-Regular.ttf') format('truetype');
+    font-size: medium;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 引入 Montagu Slab 字体（如果未通过 Google Fonts 加载） */
+@font-face {
+    font-family: 'Montagu Slab';
+    src: url('fonts/MontaguSlab/MontaguSlab-Regular.woff2') format('woff2'),
+        url('fonts/MontaguSlab/MontaguSlab-Regular.woff') format('woff'),
+        url('fonts/MontaguSlab/MontaguSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用字体 */
+body {
+    font-family: var(--font-montserrat);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-montagu-slab);
+}
+
+.sp-pro-sans-page {
+    font-family: var(--font-SP-Pro-Sans);
+    font-size: big;
+    color: #3C3C3C;
+}
+
+.sp-pro-sans-page * {
+    font-family: inherit;
+}
+
+.sp-pro-sans-page h1 {
+    font-size: 2em;
+    /* 例如，将 h1 设置为更大的字体 */
+    font-weight: 600;
+}
+
+.sp-pro-sans-page h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.sp-pro-sans-page h3 {
+    font-size: 1.5em;
+    font-weight: 300;
 }
