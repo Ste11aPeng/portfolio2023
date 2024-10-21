@@ -1184,3 +1184,40 @@ h3 {
     font-size: 1.5em;
     font-weight: 300;
 }
+
+/* 根元素字体大小 */
+html {
+    font-size: 16px;
+}
+
+/* 基本字体设置 */
+body {
+    font-size: 1rem;
+}
+
+p,
+li {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+}
+
+h1,
+.title {
+    font-size: clamp(2rem, 5vw + 1rem, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+}
+
+.smallname {
+    font-size: clamp(1.2rem, 2vw + 0.5rem, 1.8rem);
+}
+
+/* 移除媒体查询中的字体大小设置，除非有特殊需求 */
+@media screen and (max-width: 768px) {
+    /* 其他样式调整 */
+}
+
+@media screen and (max-width: 480px) {
+    /* 其他样式调整 */
+}
