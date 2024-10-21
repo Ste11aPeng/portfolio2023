@@ -909,6 +909,15 @@ aside {
     mix-blend-mode: darken;
 }
 
+.responsive-video {
+    width: 95%;
+    /* Maintain the desired width */
+    height: 700px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* Adjusts the video to fill the container */
+}
+
 .project-image-inside img {
     width: 95%;
     /* border: rgba(128, 128, 128, 0.374) solid 2px;
@@ -916,6 +925,8 @@ aside {
     /* border: solid 1px #FF8D8D; */
     /* border-radius: 10px; */
 }
+
+
 
 /* some specific page setting */
 /* #ProblemGoal,
