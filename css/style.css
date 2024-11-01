@@ -566,6 +566,7 @@ p {
 
 .project-image:hover .image-overlay2 {
     opacity: 1;
+    background-color: #FBF6F2;
 }
 
 .instantchange:hover img {
