@@ -427,12 +427,12 @@ p {
     border-radius: 5px; */
     text-decoration: none;
     background-size: contain;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
 }
 
 .go-project:hover {
     transform: scale(1.2);
-    transform: translateY(5px);
+    transform: translateY(12px);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 
 }
@@ -463,16 +463,16 @@ p {
     background-color: #fff;
     border: 1px solid #d9d9d9;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 8px;
     overflow: hidden;
-    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .grid-item:hover {
     box-shadow: #F6BD60;
-    transform: scale(1.2);
-    transform: translateY(-5px);
-    filter: drop-shadow(0 4px 8px #F6BD60);
+    transform: scale(1.3);
+    transform: translateY(-7px);
+    filter: drop-shadow(0 5px 10px #d0d0d0);
 
 }
 
@@ -556,7 +556,7 @@ p {
 
 /* hover效果 */
 .project-image:hover img {
-    filter: blur(7px);
+    filter: blur(45px);
     /* 图片hover时添加模糊效果 */
 }
 
@@ -621,8 +621,8 @@ p {
 }
 
 .read-more:hover {
-    transform: scale(1.2);
-    transform: translateX(5px);
+    transform: scale(1.4);
+    transform: translateX(10px);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 
 }
@@ -1069,6 +1069,7 @@ aside {
     .overall-content {
         max-width: 70%;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1140,15 +1141,67 @@ aside {
     }
 
     .footerup-right {
-        flex-direction: row-reverse
+        flex-direction: row-reverse;
+        justify-content: center;
     }
 
-    .SP {
-        display: none;
+    .address-wrapper {
+        opacity: 0;
+    }
+
+    .navbar-holder {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        position: relative;
     }
 
     .navbar {
-        justify-content: space-around
+        display: none;
+    }
+
+    .navbar-holder::before {
+        content: '\2630';
+        /* Hamburger menu icon */
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+
+    .navbar-holder.active .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .SP {
+        display: none;
+    }
+
+    .navbar .nav-link {
+        text-align: left;
+    }
+
+    .read-more {
+        transform: scale(0.6);
+    }
+
+    .go-project {
+        transform: scale(0.6);
+    }
+
+    .tag {
+        display: none;
     }
 
     .columnlayout32+div {
@@ -1185,6 +1238,79 @@ aside {
 
     .iframe-container {
         display: none;
+    }
+
+    .columnlayout32 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .columnlayout32>div {
+        margin-bottom: 20px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .columnlayout32>div:nth-child(2) {
+        padding-left: 0px;
+    }
+
+    .columnlayout3 {
+        flex-direction: column;
+    }
+
+    .interaction-container-reverse {
+        flex-direction: column-reverse;
+        gap: 20px;
+        width: 100%;
+        /* Ensure it spans the parent width */
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        /* Remove horizontal padding */
+    }
+
+    .interaction-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+        width: 100%;
+        /* Ensure it spans the parent width */
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        /* Remove horizontal padding */
+    }
+
+    .text-content {
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .interaction-container-reverse .text-content,
+    .interaction-container-reverse .image-content {
+        width: 100%;
+        /* Make children take full width */
+        box-sizing: border-box;
+        /* Include padding and borders in width */
+    }
+
+
+
+    h1.project-title {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    h2.project-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }
 
