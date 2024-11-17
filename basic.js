@@ -172,3 +172,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarHolder = document.querySelector(".navbar-holder");
+
+    navbarHolder.addEventListener("click", function () {
+        navbarHolder.classList.toggle("active");
+    });
+});
