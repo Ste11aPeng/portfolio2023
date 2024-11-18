@@ -493,7 +493,7 @@ p {
     height: 380px;
     object-fit: cover;
     display: block;
-    transition: filter 0.3s ease;
+    transition: filter 0.8s ease;
 }
 
 .project-info-text .project-title {
@@ -556,8 +556,7 @@ p {
 
 /* hover效果 */
 .project-image:hover img {
-    filter: blur(45px);
-    /* 图片hover时添加模糊效果 */
+    filter: blur(35px);
 }
 
 .project-image:hover .image-overlay {
@@ -669,6 +668,9 @@ p {
 }
 
 /* OCT31 */
+.project-content-wrapper {
+    padding: 45px 80px;
+}
 
 .visual-gallery {
     width: 80%;
@@ -1057,6 +1059,7 @@ aside {
 
 /* 写mediaquery了 */
 /* 基本的移动设备响应式调整 */
+/* Styles for large screens */
 @media screen and (min-width: 1700px) {
     body {
         align-items: center;
@@ -1070,8 +1073,31 @@ aside {
         max-width: 70%;
     }
 
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        /* Make paragraphs larger */
+    }
+
+    .project-content-wrapper {
+        padding: 50px 100px;
+        font-size: medium;
+    }
 }
 
+
+/* 这是手机的临界点 */
 @media screen and (max-width: 768px) {
     .intro .title {
         font-size: 45px;
