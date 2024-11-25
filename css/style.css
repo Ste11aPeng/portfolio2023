@@ -1012,19 +1012,9 @@ aside {
 
 .project-image-inside img {
     width: 95%;
-    /* border: rgba(128, 128, 128, 0.374) solid 2px;
-    border-radius: 20px; */
-    /* border: solid 1px #FF8D8D; */
-    /* border-radius: 10px; */
 }
 
 
-
-/* some specific page setting */
-/* #ProblemGoal,
-#Takeaways {
-    margin-right: 90px;
-} */
 
 /* animation */
 /* 隐藏元素，直到它们被滚动到视口中 */
@@ -1092,6 +1082,10 @@ aside {
 
     .project-content-wrapper {
         padding: 50px 100px;
+        font-size: medium;
+    }
+
+    .project-content-wrapper p {
         font-size: medium;
     }
 }
