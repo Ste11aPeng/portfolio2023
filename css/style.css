@@ -108,17 +108,17 @@ nav .nav-link:hover {
     text-shadow: 0px 4px 8px rgba(152, 152, 152, 0.2);
 }
 
+*::selection,
 div::selection,
 section::selection,
 a::selection,
 span::selection,
 ul::selection,
 li::selection,
-chinese-words::selection {
+p::selection {
     color: white;
-    /* 文字颜色 */
-    background-color: rgba(110, 95, 95, 0.9);
-    /* 背景颜色 */
+    background-color: #F6BD60;
+
 }
 
 
